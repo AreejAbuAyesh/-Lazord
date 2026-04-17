@@ -661,7 +661,54 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 1024px) {
+    .hero, .content-workflow, .contact-container, .faq-section, .case-container {
+        flex-direction: column;
+    }
+    .hero-box, .hero-img img, .image-workflow img {
+        width: 100%;
+    }
+    .results-cards, .cards-solutions, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    .case-right, .case-left {
+        width: 100%;
+    }
+    .before-after {
+        flex-direction: column;
+    }
+    .img-box-case {
+        width: 100%;
+    }
+    .case-left {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .small-card {
+        width: 45%;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-cta, .footer-links {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer-col {
+        width: 45%;
+    }
+}
 
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+    }
+    .small-card {
+        width: 100%;
+    }
+}
    
 
    
