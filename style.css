@@ -661,7 +661,7 @@
         margin: 0 auto;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .hero, .content-workflow, .contact-container, .faq-section, .case-container {
         flex-direction: column;
         gap: 30px;
