@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلول رقمية - لازورد</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-right">
+        <a href="index.html" class="logo">لازورد</a>
+        <nav class="nav-menu">
+            <div class="nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+            <div class="nav-item">خدمات المختبرات <span class="arrow">▼</span><div class="dropdown"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+            <div class="nav-item">الحلول <span class="arrow">▼</span><div class="dropdown"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+            <div class="nav-item"><a href="pricing.html">التسعير</a></div>
+            <div class="nav-item">التعلم <span class="arrow">▼</span><div class="dropdown"><a href="articles.html">المقالات</a></div></div>
+        </nav>
+    </div>
+    <div class="nav-left">
+        <div class="phone-container"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+        <button class="btn-login"><a href="login.html">تسجيل الدخول</a></button>
+        <button class="btn-start"><a href="signup.html">ابدأ الآن</a></button>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="mobile-overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-drawer" id="drawer">
+    <div class="drawer-header"><div class="logo">لازورد</div><div style="font-size:30px;cursor:pointer;" onclick="toggleMenu()">×</div></div>
+    <div class="mobile-nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">خدمات المختبرات <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">الحلول <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+    <div class="mobile-nav-item"><a href="pricing.html">التسعير</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">التعلم <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="articles.html">المقالات</a></div></div>
+    <div class="phone-container" style="margin:25px 0;"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+    <button class="btn-start" style="width:100%;margin-bottom:10px;"><a href="signup.html">ابدأ الآن</a></button>
+    <button class="btn-login" style="width:100%;"><a href="login.html">تسجيل الدخول</a></button>
+</div>
+
+<section class="page-header">
+    <h1>حلول رقمية متكاملة</h1>
+    <p>نقدم مجموعة متكاملة من الحلول الرقمية لتحويل عيادتك إلى عيادة رقمية بالكامل، من المسح الضوئي إلى التصنيع.</p>
+</section>
+
+<div class="container">
+    <div class="solutions-grid">
+        <div class="solution-card"><i class="fas fa-camera"></i><h3>مسح ضوئي داخل الفم</h3><p>ماسحات ضوئية دقيقة وسهلة الاستخدام مع دعم فني متكامل.</p></div>
+        <div class="solution-card"><i class="fas fa-cube"></i><h3>طباعة ثلاثية الأبعاد</h3><p>طابعات ثلاثية الأبعاد متطورة لطباعة النماذج والأطقم.</p></div>
+        <div class="solution-card"><i class="fas fa-laptop-code"></i><h3>برامج تصميم</h3><p>برامج CAD/CAM متقدمة لتصميم التيجان والجسور.</p></div>
+        <div class="solution-card"><i class="fas fa-chalkboard-teacher"></i><h3>تدريب رقمي</h3><p>برامج تدريبية متكاملة لفريق عيادتك.</p></div>
+        <div class="solution-card"><i class="fas fa-cloud-upload-alt"></i><h3>سحابة تخزين</h3><p>تخزين سحابي آمن لجميع حالات المرضى.</p></div>
+        <div class="solution-card"><i class="fas fa-chart-line"></i><h3>تحليلات ذكية</h3><p>تقارير وتحليلات متقدمة لأداء عيادتك.</p></div>
+    </div>
+
+    <div class="software-showcase">
+        <div class="software-image"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800" alt="برامج رقمية"></div>
+        <div class="software-info">
+            <h2>برامج 3Shape المتكاملة</h2>
+            <p>نوفر برامج 3Shape الرائدة في مجال طب الأسنان الرقمي، بما في ذلك TRIOS و Dental System. هذه البرامج تتيح لك المسح الضوئي والتصميم والتواصل مع المختبر بسهولة.</p>
+            <p>مع برامجنا، يمكنك تصميم التيجان والجسور والأطقم بكل دقة وسهولة، وإرسالها إلى مختبرنا الرقمي للتصنيع.</p>
+        </div>
+    </div>
+
+    <div class="integration">
+        <h2 class="section-title">تكامل مع أنظمة العيادة</h2>
+        <div class="integration-icons">
+            <i class="fab fa-windows"></i>
+            <i class="fab fa-apple"></i>
+            <i class="fab fa-android"></i>
+            <i class="fas fa-cloud"></i>
+            <i class="fas fa-database"></i>
+        </div>
+        <p style="margin-top: 30px;">حلولنا تتكامل بسلاسة مع أنظمة إدارة العيادات الأكثر شيوعاً، مما يسهل سير العمل ويزيد الإنتاجية.</p>
+    </div>
+
+    <div class="workflow">
+        <h2 class="section-title">سير العمل الرقمي المتكامل</h2>
+        <div class="workflow-steps">
+            <div class="workflow-step"><div class="step-icon"><i class="fas fa-camera"></i></div><h4>المسح</h4><p>مسح ثلاثي الأبعاد</p></div>
+            <div class="workflow-step"><div class="step-icon"><i class="fas fa-drafting-compass"></i></div><h4>التصميم</h4><p>تصميم رقمي دقيق</p></div>
+            <div class="workflow-step"><div class="step-icon"><i class="fas fa-check-double"></i></div><h4>الموافقة</h4><p>مراجعة وموافقة</p></div>
+            <div class="workflow-step"><div class="step-icon"><i class="fas fa-truck"></i></div><h4>التسليم</h4><p>تصنيع وتسليم</p></div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>حوِّل عيادتك إلى عيادة رقمية بالكامل</h2>
+        <p>احصل على استشارة مجانية حول التحول الرقمي لعيادتك</p>
+        <a href="signup.html" class="cta-btn">طلب استشارة</a>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer"><div class="footer-container"><div class="footer-cta"><h3>هل مازلت تأخذ الانطباعات الجسدية؟</h3><p>نقدم لك كل ما تحتاجه للبدء في طب الأسنان الرقمي بسهولة — بما في ذلك الماسح الضوئي داخل الفم.</p><button onclick="location.href='signup.html'">ابدأ</button></div><div class="footer-links"><div class="footer-col"><h4>لازورد</h4><li onclick="location.href='why-lazward.html'">لماذا لازورد</li><li>الخدمات</li><li>الوظائف</li><li>سياسة الخصوصية</li><li>شروط الاستخدام</li><li>تواصل معنا</li></div><div class="footer-col"><h4>منتجات</h4><li onclick="location.href='crowns-bridges.html'">تيجان وجسور</li><li>زراعة الأسنان</li><li>تقويم</li><li onclick="location.href='digital-solutions.html'">حلول رقمية</li></div><div class="footer-col"><h4>ممارسات</h4><li>تحسين الأداء</li><li>إدارة العيادة</li><li>حلول متكاملة</li></div><div class="footer-col"><h4>موارد</h4><li onclick="location.href='articles.html'">مقالات</li><li>تعليم</li><li>دعم</li></div></div></div></footer>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسعير - لازورد</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-right">
+        <a href="index.html" class="logo">لازورد</a>
+        <nav class="nav-menu">
+            <div class="nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+            <div class="nav-item">خدمات المختبرات <span class="arrow">▼</span><div class="dropdown"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+            <div class="nav-item">الحلول <span class="arrow">▼</span><div class="dropdown"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+            <div class="nav-item"><a href="pricing.html">التسعير</a></div>
+            <div class="nav-item">التعلم <span class="arrow">▼</span><div class="dropdown"><a href="articles.html">المقالات</a></div></div>
+        </nav>
+    </div>
+    <div class="nav-left">
+        <div class="phone-container"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+        <button class="btn-login"><a href="login.html">تسجيل الدخول</a></button>
+        <button class="btn-start"><a href="signup.html">ابدأ الآن</a></button>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="mobile-overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-drawer" id="drawer">
+    <div class="drawer-header"><div class="logo">لازورد</div><div style="font-size:30px;cursor:pointer;" onclick="toggleMenu()">×</div></div>
+    <div class="mobile-nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">خدمات المختبرات <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">الحلول <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+    <div class="mobile-nav-item"><a href="pricing.html">التسعير</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">التعلم <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="articles.html">المقالات</a></div></div>
+    <div class="phone-container" style="margin:25px 0;"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+    <button class="btn-start" style="width:100%;margin-bottom:10px;"><a href="signup.html">ابدأ الآن</a></button>
+    <button class="btn-login" style="width:100%;"><a href="login.html">تسجيل الدخول</a></button>
+</div>
+
+<!-- Hero -->
+<section class="page-header">
+    <h1>خطط تسعير تناسب احتياجاتك</h1>
+    <p>اختر الباقة المناسبة لعيادتك وابدأ رحلة التحول الرقمي اليوم. جميع الباقات تشمل دعم فني وتحديثات مستمرة.</p>
+</section>
+
+<div class="container">
+    <!-- Pricing Cards -->
+    <div class="pricing-grid">
+        <div class="pricing-card">
+            <h3>باقة أساسية</h3>
+            <div class="price">$299<span>/شهر</span></div>
+            <ul><li><i class="fas fa-check"></i> حتى 50 حالة شهرياً</li><li><i class="fas fa-check"></i> دعم فني خلال ساعات العمل</li><li><i class="fas fa-check"></i> تقارير شهرية</li><li><i class="fas fa-check"></i> تصاميم أساسية</li><li><i class="fas fa-check"></i> تسليم خلال 7 أيام</li></ul>
+            <button class="pricing-btn" onclick="location.href='signup.html'">اختر الباقة</button>
+        </div>
+        <div class="pricing-card popular">
+            <div class="popular-badge">الأكثر طلباً</div>
+            <h3>باقة احترافية</h3>
+            <div class="price">$499<span>/شهر</span></div>
+            <ul><li><i class="fas fa-check"></i> حالات غير محدودة</li><li><i class="fas fa-check"></i> دعم فني 24/7</li><li><i class="fas fa-check"></i> تقارير متقدمة وتحليلات</li><li><i class="fas fa-check"></i> تصاميم مخصصة متقدمة</li><li><i class="fas fa-check"></i> أولوية في التسليم</li><li><i class="fas fa-check"></i> ماسح ضوئي مجاني</li></ul>
+            <button class="pricing-btn" onclick="location.href='signup.html'">اختر الباقة</button>
+        </div>
+        <div class="pricing-card">
+            <h3>باقة مؤسسات</h3>
+            <div class="price">مخصص</div>
+            <ul><li><i class="fas fa-check"></i> حلول مخصصة حسب الطلب</li><li><i class="fas fa-check"></i> مدير حساب مخصص</li><li><i class="fas fa-check"></i> تكامل مع أنظمة العيادة</li><li><i class="fas fa-check"></i> تدريب للموظفين</li><li><i class="fas fa-check"></i> خصومات للكميات</li><li><i class="fas fa-check"></i> دعم فني مخصص</li></ul>
+            <button class="pricing-btn" onclick="location.href='contact.html'">تواصل معنا</button>
+        </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="comparison-table">
+        <h2 class="section-title">مقارنة الباقات</h2>
+        <table>
+            <tr><th></th><th>باقة أساسية</th><th>باقة احترافية</th><th>باقة مؤسسات</th></tr>
+            <tr><td>عدد الحالات</td><td>50 حالة</td><td>غير محدود</td><td>غير محدود</td></tr>
+            <tr><td>دعم فني</td><td>ساعات العمل</td><td>24/7</td><td>24/7 + مدير حساب</td></tr>
+            <tr><td>تقارير وتحليلات</td><td>شهرية</td><td>مباشرة</td><td>مباشرة + مخصصة</td></tr>
+            <tr><td>تصاميم مخصصة</td><td><i class="fas fa-times close"></i></td><td><i class="fas fa-check check"></i></td><td><i class="fas fa-check check"></i></td></tr>
+            <tr><td>تدريب للموظفين</td><td><i class="fas fa-times close"></i></td><td><i class="fas fa-check check"></i></td><td><i class="fas fa-check check"></i></td></tr>
+            <tr><td>ماسح ضوئي مجاني</td><td><i class="fas fa-times close"></i></td><td><i class="fas fa-check check"></i></td><td><i class="fas fa-check check"></i></td></tr>
+            <tr><td>تسليم سريع</td><td>7 أيام</td><td>3 أيام</td><td>يوم واحد</td></tr>
+        </table>
+    </div>
+
+    <!-- FAQ Mini -->
+    <div class="faq-mini">
+        <h3>أسئلة شائعة عن التسعير</h3>
+        <p>هل لديك أسئلة حول خطط التسعير؟ <a href="#" style="color:#3ca345;">تواصل مع فريق المبيعات</a> وسنقوم بالرد عليك في أقرب وقت.</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+        <h2>ليس لديك ماسح ضوئي بعد؟</h2>
+        <p>نوفر لك ماسح 3Shape TRIOS مع الباقة الاحترافية. تواصل معنا لمعرفة التفاصيل</p>
+        <a href="signup.html" class="cta-btn">احصل على عرض سعر</a>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer"><div class="footer-container"><div class="footer-cta"><h3>هل مازلت تأخذ الانطباعات الجسدية؟</h3><p>نقدم لك كل ما تحتاجه للبدء في طب الأسنان الرقمي بسهولة — بما في ذلك الماسح الضوئي داخل الفم.</p><button onclick="location.href='signup.html'">ابدأ</button></div><div class="footer-links"><div class="footer-col"><h4>لازورد</h4><li onclick="location.href='why-lazward.html'">لماذا لازورد</li><li>الخدمات</li><li>الوظائف</li><li>سياسة الخصوصية</li><li>شروط الاستخدام</li><li>تواصل معنا</li></div><div class="footer-col"><h4>منتجات</h4><li onclick="location.href='crowns-bridges.html'">تيجان وجسور</li><li>زراعة الأسنان</li><li>تقويم</li><li onclick="location.href='digital-solutions.html'">حلول رقمية</li></div><div class="footer-col"><h4>ممارسات</h4><li>تحسين الأداء</li><li>إدارة العيادة</li><li>حلول متكاملة</li></div><div class="footer-col"><h4>موارد</h4><li onclick="location.href='articles.html'">مقالات</li><li>تعليم</li><li>دعم</li></div></div></div></footer>
+
+<script src="index.js"></script>
+</body>
+</html>

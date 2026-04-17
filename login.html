@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - لازورد</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-right">
+        <a href="index.html" class="logo">لازورد</a>
+        <nav class="nav-menu">
+            <div class="nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+            <div class="nav-item">خدمات المختبرات <span class="arrow">▼</span><div class="dropdown"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+            <div class="nav-item">الحلول <span class="arrow">▼</span><div class="dropdown"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+            <div class="nav-item"><a href="pricing.html">التسعير</a></div>
+            <div class="nav-item">التعلم <span class="arrow">▼</span><div class="dropdown"><a href="articles.html">المقالات</a></div></div>
+        </nav>
+    </div>
+    <div class="nav-left">
+        <div class="phone-container"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+        <button class="btn-login"><a href="login.html">تسجيل الدخول</a></button>
+        <button class="btn-start"><a href="signup.html">ابدأ الآن</a></button>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="mobile-overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-drawer" id="drawer">
+    <div class="drawer-header"><div class="logo">لازورد</div><div style="font-size:30px;cursor:pointer;" onclick="toggleMenu()">×</div></div>
+    <div class="mobile-nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">خدمات المختبرات <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">الحلول <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+    <div class="mobile-nav-item"><a href="pricing.html">التسعير</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">التعلم <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="articles.html">المقالات</a></div></div>
+    <div class="phone-container" style="margin:25px 0;"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+    <button class="btn-start" style="width:100%;margin-bottom:10px;"><a href="signup.html">ابدأ الآن</a></button>
+    <button class="btn-login" style="width:100%;"><a href="login.html">تسجيل الدخول</a></button>
+</div>
+
+<div class="login-container">
+    <div class="login-box">
+        <div class="login-header">
+            <i class="fas fa-tooth"></i>
+            <h2>مرحباً بعودتك</h2>
+            <p>سجل الدخول للوصول إلى حسابك وإدارة حالاتك</p>
+        </div>
+        
+        <div class="input-group">
+            <label>البريد الإلكتروني</label>
+            <input type="email" placeholder="example@lazward.com">
+        </div>
+        
+        <div class="input-group">
+            <label>كلمة المرور</label>
+            <input type="password" placeholder="********">
+        </div>
+        
+        <div class="options">
+            <label class="checkbox"><input type="checkbox"> تذكرني</label>
+            <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+        </div>
+        
+        <button class="login-btn">تسجيل الدخول</button>
+        
+        <div class="divider"><span>أو</span></div>
+        
+        <div class="social-login">
+            <a href="#" class="social-btn"><i class="fab fa-google"></i> Google</a>
+            <a href="#" class="social-btn"><i class="fab fa-apple"></i> Apple</a>
+        </div>
+        
+        <div class="signup-link">
+            ليس لديك حساب؟ <a href="signup.html">إنشاء حساب جديد</a>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="footer"><div class="footer-container"><div class="footer-cta"><h3>هل مازلت تأخذ الانطباعات الجسدية؟</h3><p>نقدم لك كل ما تحتاجه للبدء في طب الأسنان الرقمي بسهولة — بما في ذلك الماسح الضوئي داخل الفم.</p><button onclick="location.href='signup.html'">ابدأ</button></div><div class="footer-links"><div class="footer-col"><h4>لازورد</h4><li onclick="location.href='why-lazward.html'">لماذا لازورد</li><li>الخدمات</li><li>الوظائف</li><li>سياسة الخصوصية</li><li>شروط الاستخدام</li><li>تواصل معنا</li></div><div class="footer-col"><h4>منتجات</h4><li onclick="location.href='crowns-bridges.html'">تيجان وجسور</li><li>زراعة الأسنان</li><li>تقويم</li><li onclick="location.href='digital-solutions.html'">حلول رقمية</li></div><div class="footer-col"><h4>ممارسات</h4><li>تحسين الأداء</li><li>إدارة العيادة</li><li>حلول متكاملة</li></div><div class="footer-col"><h4>موارد</h4><li onclick="location.href='articles.html'">مقالات</li><li>تعليم</li><li>دعم</li></div></div></div></footer>
+
+<script src="index.js"></script>
+</body>
+</html>

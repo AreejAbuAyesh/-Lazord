@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لازورد - مختبر الأسنان الرقمي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+<header class="header">
+    <div class="nav-right">
+        <a href="index.html" class="logo">لازورد</a>
+        <nav class="nav-menu">
+            <div class="nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+            <div class="nav-item">خدمات المختبرات <span class="arrow">▼</span><div class="dropdown"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+            <div class="nav-item">الحلول <span class="arrow">▼</span><div class="dropdown"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+            <div class="nav-item"><a href="pricing.html">التسعير</a></div>
+            <div class="nav-item">التعلم <span class="arrow">▼</span><div class="dropdown"><a href="articles.html">المقالات</a></div></div>
+        </nav>
+    </div>
+    <div class="nav-left">
+        <div class="phone-container"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+        <button class="btn-login"><a href="login.html">تسجيل الدخول</a></button>
+        <button class="btn-start"><a href="signup.html">ابدأ الآن</a></button>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<div class="mobile-overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-drawer" id="drawer">
+    <div class="drawer-header"><div class="logo">لازورد</div><div style="font-size:30px;cursor:pointer;" onclick="toggleMenu()">×</div></div>
+    <div class="mobile-nav-item"><a href="why-lazward.html">لماذا لازورد</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">خدمات المختبرات <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="crowns-bridges.html">تيجان وجسور</a><a href="dentures.html">أطقم أسنان</a></div></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">الحلول <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="digital-solutions.html">حلول رقمية</a></div></div>
+    <div class="mobile-nav-item"><a href="pricing.html">التسعير</a></div>
+    <div class="mobile-nav-item" onclick="this.classList.toggle('open')">التعلم <span class="arrow" style="float:left;">▼</span><div class="mobile-dropdown-content"><a href="articles.html">المقالات</a></div></div>
+    <div class="phone-container" style="margin:25px 0;"><span class="phone-label">هاتف:</span><span class="phone-number">(972)-0599998531</span></div>
+    <button class="btn-start" style="width:100%;margin-bottom:10px;"><a href="signup.html">ابدأ الآن</a></button>
+    <button class="btn-login" style="width:100%;"><a href="login.html">تسجيل الدخول</a></button>
+</div>
+
+<!-- Hero -->
+<section><div class="hero"><div class="hero-box"><h1>مختبر الأسنان الرقمي مع التواصل في الوقت الحقيقي</h1><p>نحن نعمل على تمكين آلاف من عيادات طب الأسنان من خلال أدوات رقمية مبتكرة توفر سرعة ودقة في العمل وتعزز التعاون بين الأطباء.</p><div class="hero-buttons"><button class="btn-hero btn-white">ابدأ الآن</button><button class="btn-hero btn-outline">شاهد الفيديو</button></div></div><div class="hero-img"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800" alt="مختبر أسنان"></div></div></section>
+
+<!-- Features -->
+<section class="features-section"><h1>تعزيز مستقبل طب الأسنان الرقمي</h1><p class="desc">لا يمكن تحقيق ترميمات متسقة وملائمة إلا من خلال التواصل القوي. قمنا بتطوير طرق مبتكرة للتعاون مع أطباء الأسنان باستخدام التكنولوجيا لإعادة تعريف ما هو ممكن لكل مريض.</p><div class="features"><div class="feature hidden"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V5a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></div><h3>الخبرة عند الطلب</h3><p>يمكنك الوصول إلى خبرائنا للحصول على دعم فوري.</p></div><div class="feature hidden"><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12"/><line x1="8" y1="20" x2="16" y2="20"/></svg></div><h3>مختبر رقمي بالكامل</h3><p>فريق متخصص بأحدث تقنيات طب الأسنان الرقمية.</p></div><div class="feature hidden"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 6 6 6 10c0 6 6 12 6 12s6-6 6-12c0-4-2-8-6-8z"/></svg></div><h3>المنتجات المبتكرة</h3><p>حلول متقدمة مثل التيجان السريعة والتصاميم الدقيقة.</p></div><div class="feature hidden"><div class="icon-box"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 21c0-3 3-5 6-5"/><path d="M22 21c0-3-3-5-6-5"/></svg></div><h3>سير العمل التعاوني</h3><p>مراجعات وتصاميم مباشرة لنتائج أدق وسرعة أعلى.</p></div></div></section>
+
+<!-- Solutions Cards -->
+<section class="solutions"><div class="container-solutions"><h2>حلول طب الأسنان الترميمية لتناسب احتياجاتك</h2><div class="cards-solutions"><div class="card-solution"><h3>هل أنت جديد في مجال المسح الضوئي؟</h3><p>تقديم نتائج متوقعة للمرضى باستخدام التكنولوجيا والأدوات المبتكرة.</p><ul><li><i class="fa-solid fa-check"></i> الماسح الضوئي 3Shape TRIOS الأساسي</li><li><i class="fa-solid fa-check"></i> سير عمل المسح الرقمي السريع</li><li><i class="fa-solid fa-check"></i> تجارب أفضل للمرضى</li></ul><a href="signup.html" class="btn-solution">سجل الآن</a></div><div class="card-solution"><h3>هل تقوم بالمسح الضوئي بالفعل؟</h3><p>قم بتنمية ممارستك من خلال الانتقال إلى سير العمل الرقمي.</p><ul><li><i class="fa-solid fa-check"></i> الماسح الضوئي 3Shape TRIOS الأساسي</li><li><i class="fa-solid fa-check"></i> سير عمل المسح الرقمي السريع</li><li><i class="fa-solid fa-check"></i> مساعدات التصميم للمعالجة السريرية</li></ul><a href="signup.html" class="btn-solution">احصل على الماسح الضوئي الخاص بك</a></div></div></div></section>
+
+<!-- Products -->
+<section class="lab-section"><h2>أطلق العنان للابتكار الرائد في السوق مع مختبر طب الأسنان الخاص بنا</h2><p>لا يمكن تحقيق ترميمات متسقة وملائمة إلا من خلال التواصل القوي.</p><br><div class="grid-4"><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966480.png"></div><p>تيجان الزركونيا</p></div><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png"></div><p>زراعة الأسنان</p></div><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966493.png"></div><p>طقم الأسنان</p></div><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966499.png"></div><p>أجهزة مباشرة</p></div></div><div class="grid-3"><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966479.png"></div><p>واقيات ليلية</p></div><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png"></div><p>تقويم شفاف</p></div><div class="item"><div class="img-box"><img src="https://cdn-icons-png.flaticon.com/512/2966/2966485.png"></div><p>علاج انقطاع النفس</p></div></div><a href="crowns-bridges.html" class="btn-lab">استكشف جميع منتجات المختبر</a></section>
+
+<!-- Accordion -->
+<section class="workflow"><div class="container-workflow"><div class="header-workflow"><h2>قم بتحويل ممارستك باستخدام سير عمل رقمي مثبت</h2><p>استمتع بمستوى من التحكم لم يكن ممكنًا من قبل.</p></div><div class="content-workflow"><div class="image-workflow"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800" alt="سير العمل"></div><div class="accordion"><div class="accordion-item active"><div class="accordion-title"><span>المسح الضوئي بدقة وثقة</span><span class="accordion-icon"></span></div><div class="accordion-body">شرح بسيط لهذه الخطوة يوضح كيف يعمل المسح الضوئي بدقة عالية.</div></div><div class="accordion-item"><div class="accordion-title"><span>اطلب العمل المختبري باستخدام الوصفات الطبية الرقمية</span><span class="accordion-icon"></span></div><div class="accordion-body">تفاصيل إضافية عن الطلب الرقمي وإدارة المختبر.</div></div><div class="accordion-item"><div class="accordion-title"><span>الموافقة على التصاميم الرقمية قبل التصنيع</span><span class="accordion-icon"></span></div><div class="accordion-body">راجع التصاميم ووافق عليها قبل التنفيذ.</div></div><div class="accordion-item"><div class="accordion-title"><span>تتبع الحالات في الوقت الفعلي</span><span class="accordion-icon"></span></div><div class="accordion-body">تابع حالة المريض خطوة بخطوة.</div></div><div class="accordion-item"><div class="accordion-title"><span>تسليم العلاج للمريض في أيام</span><span class="accordion-icon"></span></div><div class="accordion-body">تسليم سريع وفعّال للعلاج.</div></div><div class="accordion-item"><div class="accordion-title"><span>كيف يتم مقارنة لازورد مع مختبرات الأسنان الأخرى</span><span class="accordion-icon"></span></div><div class="accordion-body">مقارنة شاملة مع الحلول الأخرى.</div></div></div></div></div></section>
+
+<!-- Results -->
+<section class="results-section"><div class="results-container"><div class="results-header"><h2>تحقيق نتائج أفضل لممارستك ومرضاك</h2></div><div class="results-cards"><div class="result-card"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"><h3>زيادة القدرة على التنبؤ بالعلاج.</h3><p>استخدم أدوات المسح المتقدمة - تصور التصاميم الرقمية والموافقة عليها.</p></div><div class="result-card"><img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80&w=800"><h3>تحسين تجربة المريض.</h3><p>ارفع مستوى رعاية المرضى من خلال ابتكارات مثل أطقم الأسنان ذات الموعدين.</p></div><div class="result-card"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"><h3>تطوير مهارات كل عضو من الموظفين.</h3><p>اجعل مساعديك يقومون بالمسح بثقة لكل سير عمل رقمي.</p></div></div></div></section>
+
+<!-- Stats -->
+<section class="stats-section"><h2>الآلاف من الممارسات تثق في لازورد في أعمالها المخبرية</h2><div class="stats-cards"><div class="stat-card"><h3>50K+</h3><p>تقييمات 5 نجوم</p></div><div class="stat-card"><h3>$30K</h3><p>تم الحفظ مقدماً</p></div><div class="stat-card"><h3>1.5M+</h3><p>تم تسليم الابتسامات السعيدة</p></div></div></section>
+
+<!-- Contact -->
+<section class="contact-section"><div class="contact-container"><div class="contact-text"><h2>تواصل معنا</h2><p>قم بتطوير ممارساتك مع لازورد - الشريك الرقمي الوحيد المتكامل.</p><h3>ابدأ اليوم عن طريق ملء النموذج.</h3><p class="small-text">من خلال تقديم النموذج أعلاه، أوافق على شروط الاستخدام وسياسة الخصوصية.</p></div><div class="contact-form"><div class="form-grid"><div class="form-group"><label>الاسم الأول:</label><input type="text" placeholder="الاسم الأول"></div><div class="form-group"><label>اسم العائلة:</label><input type="text" placeholder="اسم العائلة"></div><div class="form-group"><label>البريد الإلكتروني:</label><input type="email" placeholder="example@lazward.com"></div><div class="form-group"><label>رقم الهاتف:</label><input type="text" placeholder="رقم الهاتف"></div><div class="form-group"><label>دورك في العيادة:</label><input type="text" placeholder="طبيب أسنان"></div><div class="form-group"><label>اسم عيادتك:</label><input type="text" placeholder="اسم العيادة"></div></div><button class="btn-contact">ابدأ الآن</button></div></div></section>
+
+<!-- Case Study -->
+<section class="case-section"><div class="case-title">تعرف على المزيد حول مستقبل طب الأسنان وكيف يشكله لازورد.</div><div class="line"></div><div class="case-container"><div class="case-right"><div class="before-after"><div class="img-box-case"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=800"><div class="label-case">BEFORE</div></div><div class="img-box-case"><img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=800"><div class="label-case">AFTER</div></div></div><div class="caption">دراسة حالة: 10 وحدات لتحويل ابتسامة الزركونيا</div></div><div class="case-left"><div class="small-card"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400"><p>داخل معمل لازورد للمستقبل</p></div><div class="small-card"><img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&q=80&w=400"><p>كيف يعمل لازورد</p></div></div></div></section>
+
+<!-- FAQ -->
+<section class="faq-section"><div class="faq-title"><h2>الأسئلة الشائعة حول لازورد</h2></div><div class="faq-list"><div class="faq-item"><div class="faq-question">ما هو لازورد <span>⌄</span></div><div class="faq-answer">لازورد هو حل رقمي متكامل لطب الأسنان.</div></div><div class="faq-item"><div class="faq-question">ما هي فوائد طب الأسنان الرقمي <span>⌄</span></div><div class="faq-answer">يوفر دقة أعلى وسرعة في التنفيذ.</div></div><div class="faq-item"><div class="faq-question">ما هو مختبر الأسنان الرقمي <span>⌄</span></div><div class="faq-answer">مختبر يعتمد على تقنيات رقمية حديثة.</div></div><div class="faq-item"><div class="faq-question">ما هي سير العمل المبتكرة <span>⌄</span></div><div class="faq-answer">سير عمل رقمي متكامل من البداية للنهاية.</div></div><div class="faq-item"><div class="faq-question">ما هي منتجات المختبر <span>⌄</span></div><div class="faq-answer">تيجان، جسور، وزراعة رقمية.</div></div><div class="faq-item"><div class="faq-question">كيف تتم المقارنة مع المختبرات الأخرى <span>⌄</span></div><div class="faq-answer">جودة أعلى وسرعة أفضل.</div></div></div></section>
+
+<!-- Footer -->
+<footer class="footer"><div class="footer-container"><div class="footer-cta"><h3>هل مازلت تأخذ الانطباعات الجسدية؟</h3><p>نقدم لك كل ما تحتاجه للبدء في طب الأسنان الرقمي بسهولة — بما في ذلك الماسح الضوئي داخل الفم.</p><button onclick="location.href='signup.html'">ابدأ</button></div><div class="footer-links"><div class="footer-col"><h4>لازورد</h4><li onclick="location.href='why-lazward.html'">لماذا لازورد</li><li>الخدمات</li><li>الوظائف</li><li>سياسة الخصوصية</li><li>شروط الاستخدام</li><li>تواصل معنا</li></div><div class="footer-col"><h4>منتجات</h4><li onclick="location.href='crowns-bridges.html'">تيجان وجسور</li><li>زراعة الأسنان</li><li>تقويم</li><li onclick="location.href='digital-solutions.html'">حلول رقمية</li></div><div class="footer-col"><h4>ممارسات</h4><li>تحسين الأداء</li><li>إدارة العيادة</li><li>حلول متكاملة</li></div><div class="footer-col"><h4>موارد</h4><li onclick="location.href='articles.html'">مقالات</li><li>تعليم</li><li>دعم</li></div></div></div></footer>
+
+<script src="index.js"></script>
+</body>
+</html>
