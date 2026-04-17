@@ -760,6 +760,19 @@
         flex-direction: column;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .nav-item {
+        font-size: 12px;
+        padding: 5px 3px;
+    }
+    .nav-right {
+        flex-wrap: wrap;
+    }
+}
 
    
 
