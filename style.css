@@ -661,6 +661,105 @@
         margin: 0 auto;
     }
 }
+@media (max-width: 1024px) {
+    .hero, .content-workflow, .contact-container, .faq-section, .case-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero-box, .hero-img img, .image-workflow img {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .results-cards, .cards-solutions, .features, .grid-4, .grid-3 {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .grid-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .case-right, .case-left {
+        width: 100%;
+    }
+    .before-after {
+        flex-direction: column;
+    }
+    .img-box-case {
+        width: 100%;
+    }
+    .case-left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .small-card {
+        width: 45%;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-cta, .footer-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-col {
+        width: 45%;
+    }
+    .page-header h1 {
+        font-size: 32px;
+    }
+    .features-grid, .testimonial-grid, .image-showcase, .pricing-grid, .materials-grid, .benefits-grid, .gallery, .types-grid, .process-steps, .solutions-grid, .workflow-steps, .articles-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-showcase {
+        flex-direction: column;
+    }
+    .stats-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .small-card {
+        width: 100%;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .item {
+        max-width: 100%;
+    }
+    .hero-box {
+        padding: 40px 20px;
+    }
+    .hero-box h1 {
+        font-size: 24px;
+    }
+    .section-title, .features-section h1, .lab-section h2, .results-header h2 {
+        font-size: 24px;
+    }
+    .contact-section {
+        padding: 30px 20px;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .newsletter-input {
+        flex-direction: column;
+    }
+}
 
    
 
